@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7in1 Impact Makeover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">7in1 Impact Ecosystem</div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="menu-overlay"></div>
+        <ul class="menu">
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#marketplace">MarketPlace</a></li>
+            <li><a href="#" onclick="openRoleModal(event)">Services</a></li>
+            <li><a href="#ngo-finder">NGO Finder</a></li>
+            <li><a href="#admin">Admin</a></li>
+            <li>
+                <a href="#" class="btn-join" onclick="openRoleModal(event)">Join Us</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to 7in1 Impact Ecosystem</h1>
+            <p>Connecting NGOs, volunteers and Companies To Create A Real Social Impact In India..</p>
+            <p>"Be the change you wish to see in the world"</p>
+        </div>
+    </section>
+
+    <!-- Impact Cards Section -->
+    <section class="impact-cards-section" id="impact">
+        <div class="cards-container">
+            <!-- Card 1 -->
+            <div class="impact-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1593113565214-80afcb4a4771?auto=format&fit=crop&w=600&q=80" alt="Volunteers">
+                </div>
+                <div class="card-content">
+                    <h3>Empower Volunteers</h3>
+                    <p>Join forces with passionate individuals and make a tangible difference in the community through active participation and support.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="impact-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="NGO Support">
+                </div>
+                <div class="card-content">
+                    <h3>Support NGOs</h3>
+                    <p>Empower grassroots organizations by providing them with the necessary resources and tools to scale their social impact.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="impact-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80" alt="CSR Initiatives">
+                </div>
+                <div class="card-content">
+                    <h3>CSR Initiatives</h3>
+                    <p>Facilitate impactful corporate social responsibility programs that align with sustainable development goals for a better tomorrow.</p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="impact-card">
+                <div class="card-image-wrapper">
+                    <img src="imag/real_impact.png" alt="Make an Impact">
+                </div>
+                <div class="card-content">
+                    <h3>Make a Real Impact</h3>
+                    <p>Experience the joy of transforming lives and creating a self-sustaining ecosystem that fosters growth, hope, and real change.</p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="impact-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Sustainability">
+                </div>
+                <div class="card-content">
+                    <h3>Drive Sustainability</h3>
+                    <p>Adopt and promote eco-friendly practices to protect our environment and ensure a greener, sustainable future for generations.</p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="impact-card">
+                <div class="card-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Community Health">
+                </div>
+                <div class="card-content">
+                    <h3>Community Health</h3>
+                    <p>Improve well-being and healthcare awareness among rural and urban sectors to build stronger, healthier communities together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NGO Marketplace Section -->
+    <section class="marketplace-section" id="marketplace">
+        <h2 class="section-title">NGO MarketPlace</h2>
+        <div class="marketplace-container">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&w=600&q=80" alt="Handcrafted Basket">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Handcrafted Bamboo Basket</h3>
+                    <p class="product-subtitle">Made by Tribal Women Artisans</p>
+                    <div class="product-price">₹ 450</div>
+                    <a href="#" class="btn-view" onclick="openRoleModal(event)">View Details</a>
+                </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1584916201218-f4242ceb4809?auto=format&fit=crop&w=600&q=80" alt="Organic Honey">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Pure Organic Honey</h3>
+                    <p class="product-subtitle">Sustainably Harvested</p>
+                    <div class="product-price">₹ 300</div>
+                    <a href="#" class="btn-view" onclick="openRoleModal(event)">View Details</a>
+                </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=600&q=80" alt="Eco-friendly Bags">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-title">Eco-friendly Tote Bags</h3>
+                    <p class="product-subtitle">Recycled Cotton Material</p>
+                    <div class="product-price">₹ 150</div>
+                    <a href="#" class="btn-view" onclick="openRoleModal(event)">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <h2 class="section-title">Platform Monetization Services</h2>
+        <div class="services-container">
+            <!-- Card 1 -->
+            <div class="service-card" onclick="openRoleModal(event)" style="cursor: pointer;">
+                <h3 class="service-title">NGO Marketing Services</h3>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=600&q=80" alt="NGO Marketing">
+                </div>
+                <p class="service-subtitle">Amplify your reach and impact.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="service-card" onclick="openRoleModal(event)" style="cursor: pointer;">
+                <h3 class="service-title">Impact Report</h3>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Impact Report">
+                </div>
+                <p class="service-subtitle">Detailed analytics of your growth.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="service-card" onclick="openRoleModal(event)" style="cursor: pointer;">
+                <h3 class="service-title">Data Management</h3>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80" alt="Data Management">
+                </div>
+                <p class="service-subtitle">Secure and efficient data handling.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="service-card" onclick="openRoleModal(event)" style="cursor: pointer;">
+                <h3 class="service-title">Volunteer Campaigns</h3>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=600&q=80" alt="Volunteer Campaigns">
+                </div>
+                <p class="service-subtitle">Mobilize teams for your core cause.</p>
+            </div>
+            <!-- Card 5 -->
+            <div class="service-card" onclick="openRoleModal(event)" style="cursor: pointer;">
+                <h3 class="service-title">Our Events</h3>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80" alt="Our Events">
+                </div>
+                <p class="service-subtitle">Join community-driven gatherings.</p>
+            </div>
+            <!-- Card 6 -->
+            <div class="service-card" onclick="openRoleModal(event)" style="cursor: pointer;">
+                <h3 class="service-title">Events Highlights</h3>
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=600&q=80" alt="Events Highlights">
+                </div>
+                <p class="service-subtitle">Relive our most impactful moments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NGO Finder Maps Section -->
+    <section class="map-section" id="ngo-finder">
+        <h2 class="section-title dark-text">Find NGOs Near You</h2>
+        
+        <div class="map-search-container">
+            <input type="text" id="mapSearchInput" placeholder="Enter City, PIN code or Address..." />
+            <button id="mapSearchBtn">Search</button>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                id="googleMapIframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15282225.799791459!2d73.7250245393691!3d20.750301298393563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1703606014421!5m2!1sen!2sin" 
+                width="100%" 
+                height="500" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="address-display">
+            <strong>Location Details:</strong> <span id="fullAddressText">India (Default View)</span>
+        </div>
+    </section>
+
+    <!-- Role Selector Modal -->
+    <div id="roleModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2000; align-items: center; justify-content: center; backdrop-filter: blur(3px);">
+        <div style="background: white; padding: 2.5rem; border-radius: 16px; max-width: 400px; width: 90%; position: relative; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);">
+            <button type="button" onclick="closeRoleModal()" style="position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 2rem; cursor: pointer; color: #64748b; line-height: 1;">&times;</button>
+            <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem; color: #1e293b; font-weight: bold;">Who are you?</h3>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <button onclick="handleRoleSelection('volunteer')" style="padding: 1rem; border: 2px solid #ef4444; background: white; color: #ef4444; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem; transition: all 0.3s;" onmouseover="this.style.background='#ef4444'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#ef4444'">Volunteer</button>
+                <button onclick="handleRoleSelection('ngo')" style="padding: 1rem; border: 2px solid #22c55e; background: white; color: #22c55e; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem; transition: all 0.3s;" onmouseover="this.style.background='#22c55e'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#22c55e'">NGO</button>
+                <button onclick="handleRoleSelection('csr')" style="padding: 1rem; border: 2px solid #0ea5e9; background: white; color: #0ea5e9; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1rem; transition: all 0.3s;" onmouseover="this.style.background='#0ea5e9'; this.style.color='white'" onmouseout="this.style.background='white'; this.style.color='#0ea5e9'">CSR Company</button>
+            </div>
+            <p style="text-align: center; font-size: 0.85rem; color: #64748b; margin-top: 1.5rem; margin-bottom: 0;">You will be redirected to fill a form.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
